@@ -2,7 +2,7 @@
 # Fields:
 #   title, authors (plain text; "Tengfei Ma" is bolded automatically; * = equal contribution, † = corresponding)
 #   venue (full name), venue_short (badge), year, type: conference | journal | workshop | preprint | tutorial | book | chapter
-#   topics: any of graph | timeseries | language | health (defined in _data/pub_topics.yml)
+#   topics: any of graph | timeseries | language | health | other (defined in _data/pub_topics.yml)
 #   selected: true  -> also listed under "Selected publications" on the Research page
 #   links: list of {name, url} (optional)   note: award / oral / footnote text (optional)
 # Order within a year = order in this file (newest first).
@@ -197,7 +197,7 @@
   year: 2025
   type: conference
   topics:
-  - language
+  - other
   links:
   - name: arXiv
     url: https://arxiv.org/abs/2407.14928
@@ -266,7 +266,7 @@
   year: 2024
   type: conference
   topics:
-  - language
+  - other
   links:
   - name: arXiv
     url: https://arxiv.org/abs/2409.19232
@@ -671,7 +671,7 @@
   year: 2020
   type: journal
   topics:
-  - health
+  - other
   links:
   - name: PDF
     url: https://www.biorxiv.org/content/biorxiv/early/2019/06/05/660639.full.pdf
@@ -857,7 +857,7 @@
   year: 2019
   type: conference
   topics:
-  - language
+  - other
   links:
   - name: PDF
     url: https://arxiv.org/pdf/1812.03230.pdf

@@ -12,7 +12,7 @@ Personal academic website built on the [AcademicPages](https://github.com/academ
 | Research page (direction texts & representative work) | `_data/research.yml` (layout: `_pages/research.html`) |
 | News (home shows the 8 newest; `/news/` shows all) | `_data/news.yml` |
 | **Publications** (one entry per paper) | `_data/publications.yml` |
-| Research directions / publication topics (4) | `_data/pub_topics.yml` |
+| Research directions (4) + "Others" publication topic | `_data/pub_topics.yml` |
 | Selected publications (Research page) | add `selected: true` to an entry in `_data/publications.yml` |
 | Talks / service | `_pages/talks.md` |
 | Resources (code, data, book, tutorials) | `_pages/resources.md` |
@@ -30,7 +30,7 @@ Add an entry near the top of `_data/publications.yml`:
   venue_short: "ABC 2027"                    # badge text
   year: 2027
   type: conference                           # conference | journal | workshop | preprint | tutorial | book | chapter
-  topics: [graph, health]                    # graph | timeseries | language | health
+  topics: [graph, health]                    # graph | timeseries | language | health | other
   links:
     - {name: arXiv, url: "https://arxiv.org/abs/xxxx.xxxxx"}
     - {name: Code,  url: "https://github.com/..."}

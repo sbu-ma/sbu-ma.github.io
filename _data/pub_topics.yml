@@ -1,6 +1,7 @@
 # Research directions — used by the Research page, the Home page, and the Publications topic view/filter.
 # `id` is referenced from _data/publications.yml (topics: [...]). Order here = order on the pages.
 # `icon` is one of: graph | timeseries | language | health (inline SVG in _includes/topic-icon.html)
+# `direction: false` = shown on the Publications page only (not as a research direction on Home/Research)
 - id: graph
   name: "Graph Neural Networks"
   short: "GNNs"
@@ -21,3 +22,8 @@
   short: "Healthcare"
   icon: health
   desc: "Electronic health records, medication recommendation, drug discovery, and computational wound healing."
+- id: other
+  name: "Others"
+  short: "Others"
+  direction: false
+  desc: "Other topics, including AI-assisted creative tools, AI for science, and secure model training."

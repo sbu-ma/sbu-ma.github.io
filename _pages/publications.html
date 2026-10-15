@@ -31,13 +31,13 @@ author_profile: true
 
 <!-- ===== View 1: grouped by year ===== -->
 <div class="pub-view" id="view-year" data-view="year">
-  {% assign by_year = pubs | group_by: "year" | sort: "name" | reverse %}
+  {% assign by_year = pubs | group_by_exp: "p", "p.year | at_least: 2015" | sort: "name" | reverse %}
   <nav class="pub-jump">
-    {% for g in by_year %}<a href="#y{{ g.name }}">{{ g.name }}</a>{% endfor %}
+    {% for g in by_year %}<a href="#y{{ g.name }}">{% if g.name == 2015 %}2015 and before{% else %}{{ g.name }}{% endif %}</a>{% endfor %}
   </nav>
   {% for g in by_year %}
   <section class="pub-group" id="y{{ g.name }}">
-    <h2 class="pub-group__title">{{ g.name }}</h2>
+    <h2 class="pub-group__title">{% if g.name == 2015 %}2015 and before{% else %}{{ g.name }}{% endif %}</h2>
     <ul class="pub-list">
       {% for p in g.items %}{% include pub-entry.html pub=p %}{% endfor %}
     </ul>

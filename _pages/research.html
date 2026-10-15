@@ -6,6 +6,7 @@ author_profile: true
 ---
 
 {% assign topics = site.data.pub_topics %}
+{% assign directions = site.data.pub_topics | where_exp: "t", "t.direction != false" %}
 {% assign pubs = site.data.publications %}
 
 <p class="research-lead">
@@ -16,7 +17,7 @@ author_profile: true
 
 <p class="eyebrow">Research directions</p>
 <div class="direction-grid">
-  {% for t in topics %}
+  {% for t in directions %}
   <a class="direction-card" href="#{{ t.id }}">
     <span class="direction-card__icon">{% include topic-icon.html icon=t.icon %}</span>
     <span class="direction-card__name">{{ t.name }}</span>
@@ -26,7 +27,7 @@ author_profile: true
   {% endfor %}
 </div>
 
-{% for t in topics %}
+{% for t in directions %}
 {% assign r = site.data.research[t.id] %}
 <section class="direction" id="{{ t.id }}">
   <h2 class="direction__title"><span class="direction__icon">{% include topic-icon.html icon=t.icon %}</span>{{ t.name }}</h2>

@@ -19,7 +19,7 @@ My research interests include machine learning, natural language processing and 
 
 <p class="eyebrow">Research directions</p>
 <div class="direction-grid direction-grid--compact">
-{% for t in site.data.pub_topics %}
+{% assign directions = site.data.pub_topics | where_exp: "t", "t.direction != false" %}{% for t in directions %}
   <a class="direction-card" href="{{ '/research/' | relative_url }}#{{ t.id }}">
     <span class="direction-card__icon">{% include topic-icon.html icon=t.icon %}</span>
     <span class="direction-card__name">{{ t.name }}</span>
