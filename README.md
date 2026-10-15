@@ -2,13 +2,6 @@
 
 Personal academic website built on the [AcademicPages](https://github.com/academicpages/academicpages.github.io) Jekyll template, migrated from <https://sites.google.com/site/matf0123/>.
 
-## Deploy to GitHub Pages
-
-1. Create a repository named **`<your-github-username>.github.io`** (e.g. `sbu-ma.github.io`).
-2. Push the contents of this folder to its `main` (or `master`) branch.
-3. In the repo: **Settings → Pages → Build and deployment → Source: GitHub Actions**.
-   The included workflow (`.github/workflows/jekyll.yml`) builds and deploys on every push.
-4. If your username is not `sbu-ma`, update `url`, `repository` and `author.github` in `_config.yml`.
 
 ## Where to edit things
 
