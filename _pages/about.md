@@ -44,6 +44,5 @@ My research interests include machine learning, natural language processing and 
 
 I welcome collaborations with motivated students and researchers with strong backgrounds in machine learning and mathematics.
 
-At Stony Brook, I work with students from CS, BMI, and AMS. Students in these departments are welcome to contact me about collaboration and RA opportunities. Master's students are welcome to pursue independent study for credit (e.g., CSE 593); I currently do not have master's RA positions.
-
+In SBU, I take students from CS, BMI and AMS. Students from any of these departments are welcome to contact me regarding collaboration opportunities or RA positions. For master students, unfortunately I do not have RA positions for you, but you are welcome to do an independent study (e.g. CSE593) in my lab for credits. 
 </div>
