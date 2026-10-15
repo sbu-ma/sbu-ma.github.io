@@ -2,7 +2,8 @@
 # Fields:
 #   title, authors (plain text; "Tengfei Ma" is bolded automatically; * = equal contribution, † = corresponding)
 #   venue (full name), venue_short (badge), year, type: conference | journal | workshop | preprint | tutorial | book | chapter
-#   topics: any of the ids defined in _data/pub_topics.yml
+#   topics: any of graph | timeseries | language | health (defined in _data/pub_topics.yml)
+#   selected: true  -> also listed under "Selected publications" on the Research page
 #   links: list of {name, url} (optional)   note: award / oral / footnote text (optional)
 # Order within a year = order in this file (newest first).
 - title: 'Guided Permutation Scoring (GPS): Option-Order Permutation for Multiple-Choice Question Answering'
@@ -12,8 +13,7 @@
   year: 2026
   type: conference
   topics:
-  - nlp
-  - trust
+  - language
 - title: 'SC-JEPA: Stabilizing Latent Predictive Learning for Time-Series Anomaly Prediction'
   authors: Yanan He, Yunshi Wen, Xin Wang, Tengfei Ma
   venue: SIAM International Conference on Data Mining (SDM)
@@ -59,8 +59,7 @@
   year: 2026
   type: conference
   topics:
-  - nlp
-  - trust
+  - language
 - title: 'HypEHR: Hyperbolic Modeling of Electronic Health Records for Efficient Question Answering'
   authors: Yuyu Liu, Sarang Rajendra Patil, Mengjia Xu, Tengfei Ma
   venue: The 64th Annual Meeting of the Association for Computational Linguistics (ACL) Findings
@@ -68,8 +67,9 @@
   year: 2026
   type: conference
   topics:
+  - language
   - health
-  - nlp
+  selected: true
 - title: Graph Concept Bottleneck Models
   authors: Haotian Xu, Tsui-Wei Weng, Lam M. Nguyen, Tengfei Ma
   venue: Transactions on Machine Learning Research (TMLR)
@@ -78,7 +78,7 @@
   type: journal
   topics:
   - graph
-  - trust
+  selected: true
 - title: A Novel Approach to Zero-Shot Drug-Drug Interaction Prediction Enabled by EHR-Augmented Knowledge Graphs
   authors: Srijith Chinthalapudi, Sandeep Mallipattu, Alisa Yurovsky, Tengfei Ma
   venue: AMIA 2026 Amplify Informatics Conference
@@ -86,8 +86,8 @@
   year: 2026
   type: conference
   topics:
-  - health
   - graph
+  - health
   note: Poster
 - title: A Problem-Oriented Perspective and Anchor Verification for Code Optimization
   authors: Tong Ye, Tengfei Ma, Xuhong Zhang, Hang Yu, Jianwei Yin, Wenhai Wang
@@ -96,8 +96,7 @@
   year: 2026
   type: conference
   topics:
-  - code
-  - nlp
+  - language
 - title: 'Self-Supervised Learning on Molecular Graphs: A Systematic Investigation of Masking Design'
   authors: Jiannan Yang, Veronika Thost, Tengfei Ma
   venue: Transactions on Machine Learning Research (TMLR)
@@ -106,7 +105,6 @@
   type: journal
   topics:
   - graph
-  - science
 - title: 'When Structure Doesn''t Help: LLMs Do Not Read Text-Attributed Graphs as Effectively as We Expected'
   authors: Haotian Xu, Yuning You, Tengfei Ma
   venue: Learning on Graphs Conference (LoG)
@@ -115,7 +113,7 @@
   type: conference
   topics:
   - graph
-  - nlp
+  - language
 - title: Concept-Enhanced Automatic ICD Coding using Large Language Models
   authors: Md Shahrar Fatemi, Zhan Shi, Joel Saltz, Klaus Mueller, Tengfei Ma
   venue: The AHLI Machine Learning for Health (ML4H) Symposium Proceedings
@@ -123,8 +121,8 @@
   year: 2025
   type: conference
   topics:
+  - language
   - health
-  - nlp
 - title: Dual-Pathway Fusion of EHRs and Knowledge Graphs for Predicting Unseen Drug-Drug Interactions
   authors: Franklin Lee, Tengfei Ma
   venue: The AHLI Machine Learning for Health (ML4H) Symposium Findings Track
@@ -132,8 +130,8 @@
   year: 2025
   type: conference
   topics:
-  - health
   - graph
+  - health
 - title: Integrated machine learning analysis of proteomic and transcriptomic data identifies healing associated targets in diabetic wound repair
   authors: Brandon J. Sumpio*, Kyongmin Yeo*, Georgios Theocharidis*, Ikram Mezghani, Achille Fokoue, Alexander Gray, Jessica Gilman, Nikolaos Kalavros, Ioannis Vlachos, Samuel Sia, Tengfei Ma†, Aristidis Veves†
   venue: Scientific Reports
@@ -150,8 +148,7 @@
   year: 2025
   type: conference
   topics:
-  - code
-  - hci
+  - language
 - title: 'NBDESCRIB: A Dataset for Text Description Generation from Tables and Code in Jupyter Notebooks with Guidelines'
   authors: Xuye Liu, Tengfei Ma, Yimu Wang, Fengjie Wang, Jian Zhao
   venue: The 63rd Annual Meeting of the Association for Computational Linguistics (ACL) Findings
@@ -159,8 +156,7 @@
   year: 2025
   type: conference
   topics:
-  - nlp
-  - code
+  - language
 - title: Understanding and Tackling Over-Dilution in Graph Neural Networks
   authors: Junhyun Lee, Veronika Thost, Bumsoo Kim, Jaewoo Kang, Tengfei Ma
   venue: ACM SIGKDD International Conference on Knowledge Discovery and Data Mining (KDD)
@@ -169,6 +165,7 @@
   type: conference
   topics:
   - graph
+  selected: true
 - title: Wasserstein Graph Neural Networks for Graphs with Missing Attributes
   authors: Zhixian Chen, Tengfei Ma, Yangqiu Song, Yang Wang
   venue: IEEE Transactions on Pattern Analysis and Machine Intelligence (TPAMI)
@@ -188,11 +185,11 @@
   type: conference
   topics:
   - timeseries
-  - trust
   links:
   - name: OpenReview
     url: https://openreview.net/forum?id=n34taxF0TC
   note: † Corresponding
+  selected: true
 - title: 'Influencer: Empowering Everyday Users in Creating Promotional Posts via AI-infused Exploration and Customization'
   authors: Xuye Liu, Annie Sun, Pengcheng An, Tengfei Ma, Jian Zhao
   venue: The ACM CHI Conference on Human Factors in Computing Systems (CHI)
@@ -200,7 +197,7 @@
   year: 2025
   type: conference
   topics:
-  - hci
+  - language
   links:
   - name: arXiv
     url: https://arxiv.org/abs/2407.14928
@@ -233,8 +230,7 @@
   year: 2025
   type: conference
   topics:
-  - code
-  - trust
+  - language
   links:
   - name: arXiv
     url: https://arxiv.org/abs/2405.16133
@@ -247,11 +243,11 @@
   type: conference
   topics:
   - timeseries
-  - trust
   links:
   - name: arXiv
     url: https://arxiv.org/abs/2411.01006
   note: † Corresponding
+  selected: true
 - title: 'FAC<sup>2</sup>E: Better Understanding Large Language Model Capabilities by Dissociating Language and Cognition'
   authors: Xiaoqiang Wang, Lingfei Wu, Tengfei Ma, Bang Liu
   venue: The 2024 Conference on Empirical Methods in Natural Language Processing (EMNLP)
@@ -259,7 +255,7 @@
   year: 2024
   type: conference
   topics:
-  - nlp
+  - language
   links:
   - name: Paper
     url: https://aclanthology.org/2024.emnlp-main.734/
@@ -270,7 +266,7 @@
   year: 2024
   type: conference
   topics:
-  - trust
+  - language
   links:
   - name: arXiv
     url: https://arxiv.org/abs/2409.19232
@@ -292,8 +288,7 @@
   year: 2024
   type: conference
   topics:
-  - code
-  - nlp
+  - language
 - title: 'AdaCCD: Adaptive Semantic Contrasts Discovery based Cross Lingual Adaptation for Code Clone Detection'
   authors: Yangkai Du, Tengfei Ma, Lingfei Wu, Xuhong Zhang, Shouling Ji
   venue: The Thirty-Eighth AAAI Conference on Artificial Intelligence (AAAI)
@@ -301,7 +296,7 @@
   year: 2024
   type: conference
   topics:
-  - code
+  - language
 - title: Cycle Invariant Positional Encoding for Graph Representation Learning
   authors: Zuoyu Yan, Tengfei Ma, Liangcai Gao, Zhi Tang, Chao Chen, Yusu Wang
   venue: The Second Learning on Graphs Conference (LoG)
@@ -321,8 +316,8 @@
   year: 2023
   type: conference
   topics:
-  - nlp
   - graph
+  - language
   links:
   - name: Paper
     url: https://aclanthology.org/2023.emnlp-main.37/
@@ -333,8 +328,7 @@
   year: 2023
   type: conference
   topics:
-  - code
-  - nlp
+  - language
 - title: 'SyncTREE: Fast Timing Analysis for Integrated Circuit Design through a Physics-informed Tree-based Graph Neural Network'
   authors: Yuting Hu, Jiajie Li, Florian Klemme, Gi-Joon Nam, Tengfei Ma, Hussam Amrouch, Jinjun Xiong
   venue: Thirty-seventh Conference on Neural Information Processing Systems (NeurIPS)
@@ -343,7 +337,6 @@
   type: conference
   topics:
   - graph
-  - science
 - title: A Miniaturized, Battery-free, Wireless Wound Monitor that Predicts Wound Closure Rate Early
   authors: Nate T. Garland*, Joseph W. Song*, Tengfei Ma*, Yong Jae Kim*, Abraham Vázquez-Guardado, Ayemeh Bagheri Hashkavayi, Sankalp Koduvayur Ganeshan, Nivesh Sharma, Hanjun Ryu, Min-Kyu Lee, Brandon Sumpio, Margaret A. Jakus, Viviane Forsberg, Rajaram Kaveti, Samuel K. Sia, Aristidis Veves, John A. Rogers, Guillermo A. Ameer, Amay J. Bandodkar
   venue: Advanced Healthcare Materials
@@ -387,8 +380,7 @@
   year: 2023
   type: conference
   topics:
-  - hci
-  - code
+  - language
   links:
   - name: Paper
     url: https://dl.acm.org/doi/abs/10.1145/3544548.3580753
@@ -400,7 +392,6 @@
   type: conference
   topics:
   - timeseries
-  - trust
   links:
   - name: OpenReview
     url: https://openreview.net/forum?id=YfUICnZMwk7
@@ -424,7 +415,6 @@
   type: workshop
   topics:
   - graph
-  - science
   links:
   - name: OpenReview
     url: https://openreview.net/forum?id=kLzFuf4GoC-
@@ -447,7 +437,6 @@
   type: conference
   topics:
   - timeseries
-  - trust
   links:
   - name: arXiv
     url: https://arxiv.org/abs/2209.09114
@@ -480,8 +469,7 @@
   year: 2022
   type: conference
   topics:
-  - nlp
-  - trust
+  - language
   links:
   - name: OpenReview
     url: https://openreview.net/forum?id=rIXlzFQfH-q
@@ -493,8 +481,6 @@
   type: journal
   topics:
   - graph
-  - hci
-  - trust
   links:
   - name: arXiv
     url: https://arxiv.org/abs/2011.11048
@@ -508,7 +494,7 @@
   type: conference
   topics:
   - graph
-  - code
+  - language
 - title: 'CHEER: Rich Model Helps Poor Model via Knowledge Infusion'
   authors: Cao Xiao, Trong Nghia Hoang, Shenda Hong, Tengfei Ma, Jimeng Sun
   venue: IEEE Transactions on Knowledge and Data Engineering (TKDE)
@@ -538,7 +524,7 @@
   year: 2022
   type: preprint
   topics:
-  - nlp
+  - language
   links:
   - name: arXiv
     url: https://arxiv.org/abs/2205.10511
@@ -549,8 +535,8 @@
   year: 2021
   type: conference
   topics:
-  - nlp
   - graph
+  - language
   links:
   - name: Paper
     url: https://aclanthology.org/2021.emnlp-main.519/
@@ -561,7 +547,7 @@
   year: 2021
   type: conference
   topics:
-  - nlp
+  - language
   links:
   - name: PDF
     url: https://aclanthology.org/2021.findings-emnlp.118.pdf
@@ -624,7 +610,7 @@
   type: journal
   topics:
   - graph
-  - code
+  - language
 - title: '图神经网络：基础与前沿 (Graph Neural Networks: Fundamentals and Frontiers)'
   authors: 马腾飞 (Tengfei Ma)
   venue: 电子工业出版社 (Publishing House of Electronics Industry)
@@ -645,8 +631,8 @@
   year: 2020
   type: conference
   topics:
+  - language
   - health
-  - nlp
   links:
   - name: PDF
     url: http://web.cs.wpi.edu/~xqin/publication/qin-2020-metrnn/qin-2020-metrnn.pdf
@@ -657,7 +643,7 @@
   year: 2020
   type: conference
   topics:
-  - nlp
+  - language
   links:
   - name: arXiv
     url: http://arxiv.org/abs/2010.01781
@@ -685,7 +671,7 @@
   year: 2020
   type: journal
   topics:
-  - science
+  - health
   links:
   - name: PDF
     url: https://www.biorxiv.org/content/biorxiv/early/2019/06/05/660639.full.pdf
@@ -723,7 +709,6 @@
   type: conference
   topics:
   - graph
-  - science
   links:
   - name: arXiv
     url: https://arxiv.org/abs/1811.00210
@@ -761,7 +746,7 @@
   year: 2019
   type: workshop
   topics:
-  - nlp
+  - language
   links:
   - name: PDF
     url: https://drive.google.com/open?id=1Kz4HOT06oMoamvYn5hYkUBbnK2ORZaKb
@@ -772,8 +757,7 @@
   year: 2019
   type: conference
   topics:
-  - nlp
-  - hci
+  - language
   links:
   - name: Paper
     url: https://www.aclweb.org/anthology/D19-1628/
@@ -784,8 +768,8 @@
   year: 2019
   type: workshop
   topics:
-  - nlp
   - graph
+  - language
   links:
   - name: Paper
     url: https://www.aclweb.org/anthology/D19-5319/
@@ -797,7 +781,6 @@
   type: journal
   topics:
   - graph
-  - hci
   links:
   - name: PDF
     url: https://arxiv.org/pdf/1907.11040.pdf
@@ -815,7 +798,6 @@
   type: conference
   topics:
   - health
-  - trust
   links:
   - name: PDF
     url: https://futianfan.github.io/BCB19_PEARL.pdf
@@ -840,8 +822,8 @@
   year: 2019
   type: conference
   topics:
-  - health
   - graph
+  - health
   links:
   - name: PDF
     url: https://www.ijcai.org/proceedings/2019/0825.pdf
@@ -863,8 +845,8 @@
   year: 2019
   type: conference
   topics:
-  - health
   - timeseries
+  - health
   links:
   - name: PDF
     url: https://www.ijcai.org/proceedings/2019/0816.pdf
@@ -875,7 +857,7 @@
   year: 2019
   type: conference
   topics:
-  - trust
+  - language
   links:
   - name: PDF
     url: https://arxiv.org/pdf/1812.03230.pdf
@@ -886,8 +868,8 @@
   year: 2019
   type: conference
   topics:
-  - health
   - graph
+  - health
   links:
   - name: arXiv
     url: https://arxiv.org/abs/1809.01852
@@ -898,8 +880,8 @@
   year: 2019
   type: preprint
   topics:
-  - health
   - graph
+  - health
   links:
   - name: arXiv
     url: https://arxiv.org/abs/1910.02107
@@ -911,7 +893,6 @@
   type: workshop
   topics:
   - graph
-  - science
 - title: Constrained Generation of Semantically Valid Graphs via Regularizing Variational Autoencoders
   authors: Tengfei Ma*, Jie Chen*, Cao Xiao
   venue: Neural Information Processing Systems (NeurIPS)
@@ -933,8 +914,8 @@
   year: 2018
   type: conference
   topics:
-  - health
   - graph
+  - health
   links:
   - name: Paper
     url: https://www.ijcai.org/proceedings/2018/483
@@ -947,8 +928,7 @@
   year: 2018
   type: conference
   topics:
-  - hci
-  - nlp
+  - language
   links:
   - name: PDF
     url: https://drive.google.com/open?id=105hTGh8yB3SGaD7ZgfLOE6jSfbXVsiAD
@@ -959,8 +939,7 @@
   year: 2018
   type: conference
   topics:
-  - hci
-  - nlp
+  - language
   links:
   - name: PDF
     url: http://ceur-ws.org/Vol-2128/industrial1.pdf
@@ -978,6 +957,7 @@
   - name: Code
     url: https://github.com/matenure/FastGCN
   note: '* Equal contribution'
+  selected: true
 - title: Readmission Prediction via Deep Contextual Embedding of Clinical Concepts
   authors: Cao Xiao*, Tengfei Ma*, Adji B. Dieng, David Blei, Fei Wang
   venue: PLOS ONE
@@ -1009,8 +989,7 @@
   year: 2018
   type: conference
   topics:
-  - nlp
-  - hci
+  - language
   links:
   - name: Paper
     url: https://dl.acm.org/citation.cfm?id=3184558.3186340
@@ -1021,8 +1000,7 @@
   year: 2018
   type: chapter
   topics:
-  - hci
-  - nlp
+  - language
 - title: 'AWE: Asymmetric Word Embedding for Textual Entailment'
   authors: Tengfei Ma, Chiamin Wu, Cao Xiao, Jimeng Sun
   venue: arXiv preprint arXiv:1809.04047
@@ -1030,7 +1008,7 @@
   year: 2018
   type: preprint
   topics:
-  - nlp
+  - language
   links:
   - name: arXiv
     url: https://arxiv.org/abs/1809.04047
@@ -1041,7 +1019,7 @@
   year: 2017
   type: conference
   topics:
-  - nlp
+  - language
   links:
   - name: PDF
     url: https://arxiv.org/pdf/1612.07215
@@ -1052,8 +1030,7 @@
   year: 2017
   type: conference
   topics:
-  - hci
-  - nlp
+  - language
   links:
   - name: PDF
     url: https://drive.google.com/open?id=1Iiu1yKmOoxRok3kH5wfAUgX1Cyapuk95
@@ -1064,7 +1041,7 @@
   year: 2017
   type: conference
   topics:
-  - nlp
+  - language
   links:
   - name: Paper
     url: https://www.aclweb.org/anthology/E17-1084/
@@ -1075,7 +1052,7 @@
   year: 2016
   type: conference
   topics:
-  - nlp
+  - language
   links:
   - name: Paper
     url: http://www.aclweb.org/anthology/D16-1136
@@ -1086,7 +1063,7 @@
   year: 2015
   type: conference
   topics:
-  - nlp
+  - language
   links:
   - name: PDF
     url: http://www.aaai.org/ocs/index.php/AAAI/AAAI15/paper/viewFile/9595/9949
@@ -1097,7 +1074,7 @@
   year: 2013
   type: conference
   topics:
-  - nlp
+  - language
   links:
   - name: Paper
     url: http://www.aclweb.org/anthology/D13-1069
@@ -1116,7 +1093,7 @@
   year: 2011
   type: conference
   topics:
-  - nlp
+  - language
 - title: Multi-Document Summarization Using Minimum Distortion
   authors: Tengfei Ma, Xiaojun Wan
   venue: Proceedings of the 10th IEEE International Conference on Data Mining (ICDM), Sydney, pp. 354–363
@@ -1124,7 +1101,7 @@
   year: 2010
   type: conference
   topics:
-  - nlp
+  - language
   links:
   - name: PDF
     url: https://www.researchgate.net/profile/Tengfei_Ma5/publication/220765618_Multi-document_Summarization_Using_Minimum_Distortion/links/549f8a9d0cf267bdb8fdbe7b.pdf
@@ -1135,7 +1112,7 @@
   year: 2010
   type: conference
   topics:
-  - nlp
+  - language
 - title: Opinion Target Extraction in Chinese News Comments
   authors: Tengfei Ma, Xiaojun Wan
   venue: Proceedings of the 23rd International Conference on Computational Linguistics (COLING), Beijing, pp. 782–790
@@ -1143,7 +1120,7 @@
   year: 2010
   type: conference
   topics:
-  - nlp
+  - language
   links:
   - name: Paper
     url: http://www.aclweb.org/anthology/C10-2090
@@ -1154,5 +1131,5 @@
   year: 2010
   type: conference
   topics:
-  - nlp
+  - language
   note: Oral; * Equal contribution

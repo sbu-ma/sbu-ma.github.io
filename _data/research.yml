@@ -1,0 +1,50 @@
+# Longer text for each research direction on the Research page (keyed by topic id from _data/pub_topics.yml).
+# `highlights` are representative works; `url` may point to a paper or to a filtered publication view.
+graph:
+  body: >-
+    Deep graph learning analyzes data with graph structure, such as social networks, drug–target interaction
+    networks, and molecules. My group works on making graph neural networks more powerful, efficient, and adaptable:
+    scalability, dynamic graphs, graph generation, learning with geometry and topology, graph coarsening, graph
+    pretraining, and interpretable graph models.
+  highlights:
+    - {label: "FastGCN", venue: "ICLR 2018", url: "https://openreview.net/forum?id=rytstxWAW"}
+    - {label: "EvolveGCN", venue: "AAAI 2020", url: "https://arxiv.org/abs/1902.10191"}
+    - {label: "Constrained GraphVAE", venue: "NeurIPS 2018", url: "https://arxiv.org/abs/1809.02630"}
+    - {label: "Illinois Graph Benchmark", venue: "KDD 2023", url: "https://openreview.net/forum?id=iVPVwyiL5F"}
+    - {label: "Persistent homology on graphs", venue: "ICML 2021, NeurIPS 2022, JMLR 2025", url: "https://arxiv.org/abs/2201.12032"}
+    - {label: "Graph Concept Bottleneck Models", venue: "TMLR 2026"}
+timeseries:
+  body: >-
+    Time series are everywhere in healthcare and science, but deep models for them are often hard to interpret and
+    hard to transfer. We build neuro-symbolic and shape-based models that are interpretable by design, time-series
+    foundation models that generalize across domains, and causality-aware methods for anomaly detection and prediction.
+  highlights:
+    - {label: "Abstracted Shapes as Tokens", venue: "NeurIPS 2024", url: "https://arxiv.org/abs/2411.01006"}
+    - {label: "Interpretability Gated Networks", venue: "ICLR 2025", url: "https://openreview.net/forum?id=n34taxF0TC"}
+    - {label: "Weighted Clock Logic Point Process", venue: "ICLR 2023", url: "https://openreview.net/forum?id=YfUICnZMwk7"}
+    - {label: "Neuro-symbolic time series classification", venue: "ICDM 2022", url: "https://arxiv.org/abs/2209.09114"}
+    - {label: "CAAD: causality-aware anomaly detection", venue: "KDD 2026"}
+language:
+  body: >-
+    I have worked on natural language processing since my early career. Earlier work focused on document
+    representations and summarization; more recently the focus has shifted to the trustworthiness and transparency
+    of large language models — how they use structure, how robust they are, and how to make them efficient — as well
+    as AI for code and medical NLP.
+  highlights:
+    - {label: "Resting Neurons, Active Insights", venue: "ICML 2026"}
+    - {label: "When Structure Doesn't Help: LLMs and text-attributed graphs", venue: "LoG 2025"}
+    - {label: "Attention abnormality in Trojaned BERTs", venue: "NAACL 2022", url: "https://openreview.net/forum?id=rIXlzFQfH-q"}
+    - {label: "Timeline summarization via optimal transport", venue: "EMNLP 2021", url: "https://aclanthology.org/2021.emnlp-main.519/"}
+    - {label: "LLM-generated code detection", venue: "AAAI 2025", url: "https://arxiv.org/abs/2405.16133"}
+health:
+  body: >-
+    Many graph learning problems come from biomedicine, and I also work directly on computational healthcare. With
+    collaborators, we develop graph, neuro-symbolic, and time-series models for patient phenotyping and risk
+    prediction, readmission prediction, medication recommendation, drug–drug interactions, EHR question answering,
+    and machine-learning-guided wound healing.
+  highlights:
+    - {label: "GAMENet: medication recommendation", venue: "AAAI 2019", url: "https://arxiv.org/abs/1809.01852"}
+    - {label: "Pre-trained graph-augmented transformers (G-BERT)", venue: "IJCAI 2019", url: "https://www.ijcai.org/proceedings/2019/0825.pdf"}
+    - {label: "Multi-view graph auto-encoders for drug similarity", venue: "IJCAI 2018", url: "https://www.ijcai.org/proceedings/2018/483"}
+    - {label: "HypEHR: hyperbolic EHR question answering", venue: "ACL 2026 Findings"}
+    - {label: "Battery-free wireless wound monitor", venue: "Adv. Healthc. Mater. 2023", url: "https://onlinelibrary.wiley.com/doi/pdf/10.1002/adhm.202301280"}

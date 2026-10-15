@@ -15,12 +15,14 @@ Personal academic website built on the [AcademicPages](https://github.com/academ
 | What | File |
 |---|---|
 | Sidebar (photo, name, links) & site title | `_config.yml` → `author:` |
-| Home page (bio, research highlights, collaboration) | `_pages/about.md` |
+| Home page (bio, research directions, news, collaboration) | `_pages/about.md` |
+| Research page (direction texts & representative work) | `_data/research.yml` (layout: `_pages/research.html`) |
 | News (home shows the 8 newest; `/news/` shows all) | `_data/news.yml` |
 | **Publications** (one entry per paper) | `_data/publications.yml` |
-| Publication topics (names, descriptions, order) | `_data/pub_topics.yml` |
-| Talks / tutorials / service | `_pages/talks.md` |
-| Resources (data & code) | `_pages/resources.md` |
+| Research directions / publication topics (4) | `_data/pub_topics.yml` |
+| Selected publications (Research page) | add `selected: true` to an entry in `_data/publications.yml` |
+| Talks / service | `_pages/talks.md` |
+| Resources (code, data, book, tutorials) | `_pages/resources.md` |
 | Top navigation bar | `_data/navigation.yml` |
 | Profile photo | `images/profile.jpg` |
 
@@ -35,7 +37,7 @@ Add an entry near the top of `_data/publications.yml`:
   venue_short: "ABC 2027"                    # badge text
   year: 2027
   type: conference                           # conference | journal | workshop | preprint | tutorial | book | chapter
-  topics: [graph, health]                    # ids from _data/pub_topics.yml
+  topics: [graph, health]                    # graph | timeseries | language | health
   links:
     - {name: arXiv, url: "https://arxiv.org/abs/xxxx.xxxxx"}
     - {name: Code,  url: "https://github.com/..."}

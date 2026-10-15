@@ -1,6 +1,6 @@
 ---
 layout: archive
-title: "Talks, Tutorials & Service"
+title: "Talks & Service"
 permalink: /talks/
 author_profile: true
 ---
@@ -14,13 +14,6 @@ author_profile: true
   <li><span class="news-date">10/2024</span><span><strong>Towards Interpretable and Generalizable Time Series Deep Learning Models</strong> — Weill Cornell Medicine</span></li>
   <li><span class="news-date">11/2022</span><span><strong>Machine Learning Techniques to Follow DFU Progress</strong> — Diabetic Lower Extremity Symposium</span></li>
   <li><span class="news-date">08/2022</span><span><strong>Graph learning with geometric and topological structures</strong> — AI Seminar, University of Southern California</span></li>
-</ul>
-
-## Tutorials
-
-<ul class="news-list">
-  <li><span class="news-date">2020</span><span><strong><a href="http://cse.msu.edu/~mayao4/tutorials/aaai2020/">Graph Neural Networks: Models and Applications</a></strong> — AAAI 2020 (with Yao Ma, Wei Jin, Jiliang Tang, Lingfei Wu). [<a href="https://drive.google.com/file/d/1rvm6Yq6-Ss4UmxLDIPTReJJkAdcXdhFb/view?usp=sharing">Slides</a>]</span></li>
-  <li><span class="news-date">2020</span><span><strong><a href="https://dl.acm.org/doi/abs/10.1145/3394486.3406474">Deep Graph Learning: Foundations, Advances and Applications</a></strong> — KDD 2020</span></li>
 </ul>
 
 ## Workshop Organization

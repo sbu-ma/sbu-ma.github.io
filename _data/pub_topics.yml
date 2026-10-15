@@ -1,26 +1,23 @@
-# Research topics used to group/filter publications.
-# `id` is referenced from _data/publications.yml (topics: [...]). Order here = order on the page.
+# Research directions — used by the Research page, the Home page, and the Publications topic view/filter.
+# `id` is referenced from _data/publications.yml (topics: [...]). Order here = order on the pages.
+# `icon` is one of: graph | timeseries | language | health (inline SVG in _includes/topic-icon.html)
 - id: graph
-  name: "Graph Learning"
-  desc: "Graph neural networks: scalability, dynamic graphs, generation, geometry & topology, coarsening, pretraining, and benchmarks."
-- id: health
-  name: "Healthcare & Biomedicine"
-  desc: "EHR modeling, drug discovery & drug-drug interactions, medication recommendation, wound healing, and medical imaging."
-- id: nlp
-  name: "NLP & Large Language Models"
-  desc: "Summarization, representation learning, multilingual NLP, LLM evaluation, and medical NLP."
+  name: "Graph Neural Networks"
+  short: "GNNs"
+  icon: graph
+  desc: "Scalable and dynamic graph learning, graph foundation models, and learning with geometry and topology."
 - id: timeseries
-  name: "Time Series & Neuro-Symbolic Models"
-  desc: "Interpretable and generalizable time-series models, temporal logic, anomaly detection, and time-series foundation models."
-- id: trust
-  name: "Trustworthy & Interpretable AI"
-  desc: "Interpretability, robustness, backdoor attacks, concept bottlenecks, and accountability of ML models."
-- id: code
-  name: "AI for Code"
-  desc: "Code summarization, clone detection, code search, LLM-generated code detection, and code optimization."
-- id: hci
-  name: "Human-AI Interaction & Education"
-  desc: "Visual analytics, AI-assisted creation tools, and intelligent tutoring systems."
-- id: science
-  name: "AI for Science & Other Applications"
-  desc: "Proteins and molecules, circuit design, AI planning, and financial graph analytics."
+  name: "Time Series Learning"
+  short: "Time series"
+  icon: timeseries
+  desc: "Interpretable models, shape-based representations, foundation models, and causality-aware anomaly detection."
+- id: language
+  name: "Language & Intelligence"
+  short: "Language"
+  icon: language
+  desc: "Language model transparency and trustworthiness, summarization, representation learning, and AI for code."
+- id: health
+  name: "AI for Healthcare"
+  short: "Healthcare"
+  icon: health
+  desc: "Electronic health records, medication recommendation, drug discovery, and computational wound healing."

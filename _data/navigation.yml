@@ -1,5 +1,8 @@
 # Order of the links in the top navigation bar.
 main:
+  - title: "Research"
+    url: /research/
+
   - title: "Publications"
     url: /publications/
 

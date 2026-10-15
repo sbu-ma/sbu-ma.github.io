@@ -15,7 +15,7 @@
     {% if p.note %}{% assign n = p.note | downcase %}{% unless n == "oral" or n == "spotlight" or n contains "best paper award" %}<span class="pub__note">({{ p.note }})</span>{% endunless %}{% endif %}
     <div class="pub__meta">
       {% for l in p.links %}<a class="pub__link" href="{{ l.url }}" target="_blank" rel="noopener">{{ l.name }}</a>{% endfor %}
-      {% for t in p.topics %}{% assign tp = site.data.pub_topics | where: "id", t | first %}<button type="button" class="pub__topic" data-topic="{{ t }}" title="Show all {{ tp.name }} papers">{{ tp.name }}</button>{% endfor %}
+      {% for t in p.topics %}{% assign tp = site.data.pub_topics | where: "id", t | first %}<button type="button" class="pub__topic" data-topic="{{ t }}" title="Show all {{ tp.name }} papers">{{ tp.short }}</button>{% endfor %}
     </div>
   </div>
 </li>

@@ -1,0 +1,65 @@
+---
+layout: archive
+title: "Research"
+permalink: /research/
+author_profile: true
+---
+
+{% assign topics = site.data.pub_topics %}
+{% assign pubs = site.data.publications %}
+
+<p class="research-lead">
+  My research spans the foundations of machine learning and its applications. Four connected directions run through
+  my work, many of them linked by a common thread: learning from <em>structure</em> — in graphs, time series,
+  language, and health data.
+</p>
+
+<p class="eyebrow">Research directions</p>
+<div class="direction-grid">
+  {% for t in topics %}
+  <a class="direction-card" href="#{{ t.id }}">
+    <span class="direction-card__icon">{% include topic-icon.html icon=t.icon %}</span>
+    <span class="direction-card__name">{{ t.name }}</span>
+    <span class="direction-card__desc">{{ t.desc }}</span>
+    <span class="direction-card__more">Read more ↓</span>
+  </a>
+  {% endfor %}
+</div>
+
+{% for t in topics %}
+{% assign r = site.data.research[t.id] %}
+<section class="direction" id="{{ t.id }}">
+  <h2 class="direction__title"><span class="direction__icon">{% include topic-icon.html icon=t.icon %}</span>{{ t.name }}</h2>
+  <p>{{ r.body }}</p>
+  {% if r.highlights %}
+  <p class="direction__label">Representative work</p>
+  <ul class="direction__works">
+    {% for h in r.highlights %}
+    <li>{% if h.url %}<a href="{{ h.url }}">{{ h.label }}</a>{% else %}{{ h.label }}{% endif %} <span class="direction__venue">{{ h.venue }}</span></li>
+    {% endfor %}
+  </ul>
+  {% endif %}
+  <a class="explore-link" href="{{ '/publications/' | relative_url }}?view=topic&amp;topic={{ t.id }}">Explore {{ t.name }} publications ↗</a>
+</section>
+{% endfor %}
+
+<p class="eyebrow" id="selected">A cross-section of my work</p>
+<h2 class="selected__heading">Selected publications</h2>
+<ul class="selected-list">
+  {% for p in pubs %}{% if p.selected %}
+  <li class="selected-pub">
+    <div class="selected-pub__year">{{ p.year }}</div>
+    <div class="selected-pub__body">
+      <div class="selected-pub__venue">{{ p.venue_short | remove: p.year | strip }}</div>
+      <div class="selected-pub__title">{{ p.title }}</div>
+      <div class="selected-pub__authors">{{ p.authors | replace: "Tengfei Ma", "<strong>Tengfei Ma</strong>" }}</div>
+      <div class="selected-pub__meta">
+        {% for tid in p.topics %}{% assign tp = topics | where: "id", tid | first %}<a class="selected-pub__tag" href="{{ '/publications/' | relative_url }}?view=topic&amp;topic={{ tid }}">{{ tp.short }}</a>{% endfor %}
+        <span class="selected-pub__links">{% for l in p.links %}<a href="{{ l.url }}">{{ l.name }} ↗</a>{% endfor %}</span>
+      </div>
+    </div>
+  </li>
+  {% endif %}{% endfor %}
+</ul>
+
+<p><a class="archive-btn" href="{{ '/publications/' | relative_url }}">Explore the full publication archive →</a></p>
