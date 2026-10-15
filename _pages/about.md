@@ -9,7 +9,7 @@ redirect_from:
 
 **Assistant Professor of Biomedical Informatics, Stony Brook University**
 
-I am an assistant professor in the Department of [Biomedical Informatics](https://bmi.stonybrookmedicine.edu/), with affiliations in [Computer Science](https://www.cs.stonybrook.edu/) and [Applied Mathematics & Statistics](https://www.stonybrook.edu/commcms/ams/) at Stony Brook University.
+I am an assistant professor in the Department of [Biomedical Informatics](https://bmi.stonybrookmedicine.edu/), with affiliations in [Computer Science](https://www.cs.stonybrook.edu/) and [AI Innovation Institute (AI3)](https://ai.stonybrook.edu/) at Stony Brook University.
 
 Previously, I was a staff research scientist at IBM T. J. Watson Research Center (2016–2023) and a researcher at IBM Research–Tokyo (2015–2016). I received my Ph.D. from the University of Tokyo, M.S. from Peking University, and B.E. from Tsinghua University.
 

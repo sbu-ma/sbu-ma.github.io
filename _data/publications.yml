@@ -28,6 +28,14 @@
   - name: MTS-JEPA version
     url: https://arxiv.org/html/2602.04643v1
   note: Previously named MTS-JEPA; a preliminary version is also accepted at the ICML 2026 AI Forecasting workshop.
+- title: 'Tensor-TimesFM: High-Dimensional Sparse Time Series Forecasting with Tensor Decoders and Latent Dynamics Prediction'
+  authors: Longzheng Chen, Dan Zhou, Muntasir Shohrab, Xinyuan Tao, Lin Hao, Tengfei Ma, Dantong Yu
+  venue: Joint European Conference on Machine Learning and Knowledge Discovery in Databases
+  venue_short: ECML PKDD 2026
+  year: 2026
+  type: conference
+  topics:
+  - timeseries
 - title: Spatiotemporal Modeling of Tumor Dynamics via Optimal Transport for Enhanced Longitudinal Analysis
   authors: Jiannan Yang, Jue Jiang, Tengfei Ma, Harini Veeraraghavan
   venue: The 29th International Conference on Medical Image Computing and Computer Assisted Intervention (MICCAI)
@@ -44,6 +52,14 @@
   type: conference
   topics:
   - health
+- title: 'Domain-Specific Data Synthesis for LLMs through Minimal Sufficient Representation Learning'
+  authors: Tong Ye, Hang Yu, Tengfei Ma, Xuhong Zhang, Jianguo Li, Peng Di, Peiyu Liu, Jianwei Yin, Wenhai Wang
+  venue: The 32nd SIGKDD Conference on Knowledge Discovery and Data Mining (KDD)
+  venue_short: KDD 2026
+  year: 2026
+  type: conference
+  topics:
+  - language
 - title: 'CAAD: Causality-Aware Multivariate Time Series Anomaly Detection via Multi-Scale Alignment and Structural Causal Consistency'
   authors: Xin Wang, Yunshi Wen, Yanan He, Haotian Xu, Youlan Zhao, Michel Ferreira Cardia Haddad, Tengfei Ma
   venue: The 32nd SIGKDD Conference on Knowledge Discovery and Data Mining (KDD)
