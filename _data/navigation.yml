@@ -1,0 +1,13 @@
+# Order of the links in the top navigation bar.
+main:
+  - title: "Publications"
+    url: /publications/
+
+  - title: "News"
+    url: /news/
+
+  - title: "Talks & Service"
+    url: /talks/
+
+  - title: "Resources"
+    url: /resources/

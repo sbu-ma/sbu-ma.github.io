@@ -1,0 +1,26 @@
+# Research topics used to group/filter publications.
+# `id` is referenced from _data/publications.yml (topics: [...]). Order here = order on the page.
+- id: graph
+  name: "Graph Learning"
+  desc: "Graph neural networks: scalability, dynamic graphs, generation, geometry & topology, coarsening, pretraining, and benchmarks."
+- id: health
+  name: "Healthcare & Biomedicine"
+  desc: "EHR modeling, drug discovery & drug-drug interactions, medication recommendation, wound healing, and medical imaging."
+- id: nlp
+  name: "NLP & Large Language Models"
+  desc: "Summarization, representation learning, multilingual NLP, LLM evaluation, and medical NLP."
+- id: timeseries
+  name: "Time Series & Neuro-Symbolic Models"
+  desc: "Interpretable and generalizable time-series models, temporal logic, anomaly detection, and time-series foundation models."
+- id: trust
+  name: "Trustworthy & Interpretable AI"
+  desc: "Interpretability, robustness, backdoor attacks, concept bottlenecks, and accountability of ML models."
+- id: code
+  name: "AI for Code"
+  desc: "Code summarization, clone detection, code search, LLM-generated code detection, and code optimization."
+- id: hci
+  name: "Human-AI Interaction & Education"
+  desc: "Visual analytics, AI-assisted creation tools, and intelligent tutoring systems."
+- id: science
+  name: "AI for Science & Other Applications"
+  desc: "Proteins and molecules, circuit design, AI planning, and financial graph analytics."

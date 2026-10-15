@@ -1,0 +1,7 @@
+{% comment %} Usage: {% include news-list.html limit=8 %} (omit limit to show all) {% endcomment %}
+{% assign lim = include.limit | default: 1000 %}
+<ul class="news-list">
+{% for n in site.data.news limit: lim %}
+  <li><span class="news-date">{{ n.date }}</span><span>{% if n.new %}<span class="news-new">New</span>{% endif %}{{ n.text | markdownify | remove: '<p>' | remove: '</p>' | strip }}</span></li>
+{% endfor %}
+</ul>

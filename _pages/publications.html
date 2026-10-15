@@ -1,0 +1,66 @@
+---
+layout: archive
+title: "Publications"
+permalink: /publications/
+author_profile: true
+---
+
+{% assign pubs = site.data.publications %}
+{% assign topics = site.data.pub_topics %}
+
+<p class="pub-intro">
+  Full list also on <a href="{{ site.author.googlescholar }}">Google Scholar</a>.
+  <strong>Tengfei Ma</strong> in bold; * equal contribution; † corresponding author.
+</p>
+
+<div class="pub-controls" id="pub-controls">
+  <div class="pub-controls__row">
+    <div class="pub-toggle" role="tablist" aria-label="Group publications">
+      <button type="button" role="tab" class="pub-toggle__btn is-active" data-view="year" aria-selected="true">By Year</button>
+      <button type="button" role="tab" class="pub-toggle__btn" data-view="topic" aria-selected="false">By Topic</button>
+    </div>
+    <input type="search" class="pub-search" id="pub-search" placeholder="Search title, author, venue…" aria-label="Search publications">
+  </div>
+  <div class="pub-chips" role="group" aria-label="Filter by topic">
+    <button type="button" class="pub-chip is-active" data-topic="all">All</button>
+    {% for t in topics %}
+      <button type="button" class="pub-chip" data-topic="{{ t.id }}">{{ t.name }}</button>
+    {% endfor %}
+  </div>
+</div>
+
+<!-- ===== View 1: grouped by year ===== -->
+<div class="pub-view" id="view-year" data-view="year">
+  {% assign by_year = pubs | group_by: "year" | sort: "name" | reverse %}
+  <nav class="pub-jump">
+    {% for g in by_year %}<a href="#y{{ g.name }}">{{ g.name }}</a>{% endfor %}
+  </nav>
+  {% for g in by_year %}
+  <section class="pub-group" id="y{{ g.name }}">
+    <h2 class="pub-group__title">{{ g.name }}</h2>
+    <ul class="pub-list">
+      {% for p in g.items %}{% include pub-entry.html pub=p %}{% endfor %}
+    </ul>
+  </section>
+  {% endfor %}
+</div>
+
+<!-- ===== View 2: grouped by topic (a paper can appear under several topics) ===== -->
+<div class="pub-view" id="view-topic" data-view="topic" hidden>
+  <nav class="pub-jump">
+    {% for t in topics %}<a href="#t-{{ t.id }}">{{ t.name }}</a>{% endfor %}
+  </nav>
+  {% for t in topics %}
+  <section class="pub-group" id="t-{{ t.id }}" data-group-topic="{{ t.id }}">
+    <h2 class="pub-group__title">{{ t.name }}</h2>
+    <p class="pub-group__desc">{{ t.desc }}</p>
+    <ul class="pub-list">
+      {% for p in pubs %}{% if p.topics contains t.id %}{% include pub-entry.html pub=p %}{% endif %}{% endfor %}
+    </ul>
+  </section>
+  {% endfor %}
+</div>
+
+<noscript><p>Enable JavaScript to switch to the topic view and filter by topic.</p></noscript>
+
+<script src="{{ '/assets/js/publications.js' | relative_url }}"></script>

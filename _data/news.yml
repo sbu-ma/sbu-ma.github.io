@@ -1,0 +1,108 @@
+# News items, newest first. `text` is Markdown. Set `new: true` to show a "New" tag.
+# The About page shows the first `site.data.news` items up to the limit set in _pages/about.md.
+- date: "10/2026"
+  new: true
+  text: 'Glad to give an invited talk on "Seeing Structure in Time: Interpretable, Generalizable, and Causality-Aware Time Series Learning" at NJIT.'
+- date: "05/2026"
+  new: true
+  text: "Two papers are accepted by KDD, one is accepted by AMIA as a poster."
+- date: "04/2026"
+  new: true
+  text: "One paper about LLM activation sparsification is accepted by ICML 2026."
+- date: "04/2026"
+  new: true
+  text: 'I co-organized the workshop "[Principled Design for Trustworthy AI - Interpretability, Robustness, and Safety across Modalities](https://trustworthy-ai-workshop.github.io/iclr2026/)" at ICLR 2026.'
+- date: "04/2026"
+  new: true
+  text: "One paper about hyperbolic EHR modeling for EHR-QA is accepted by ACL 2026 (Findings)."
+- date: "02/2026"
+  new: true
+  text: '"Graph Concept Bottleneck Models" is accepted by TMLR.'
+- date: "01/2026"
+  new: true
+  text: "Congratulations to Franklin Lee, a high school summer intern in my lab, on being named a top 300 scholar of this year's Regeneron Science Talent Search!"
+- date: "01/2026"
+  new: true
+  text: "A paper about code optimization is accepted by ICLR 2026."
+- date: "11/2025"
+  text: 'Two graph learning papers with interesting "negative" conclusions are accepted by LoG/TMLR. One paper shows many previous LLM+graph methods do not really utilize graph structures very well; the other investigated the masking strategies for pretraining graph foundation models and shows random masks on motifs are often good enough.'
+- date: "11/2025"
+  text: "Two papers (about medical coding and drug-drug interactions) are accepted by ML4H."
+- date: "08/2025"
+  text: 'Another paper about wound healing, "Integrated machine learning analysis of proteomic and transcriptomic data identifies healing associated targets in diabetic wound repair", is accepted to Scientific Reports.'
+- date: "07/2025"
+  text: '"MACEDON: Supporting Programmers with Real-Time Multi-Dimensional Code Evaluation and Optimization" got accepted to UIST 2025.'
+- date: "05/2025"
+  text: '"NBDESCRIB: A Dataset for Text Description Generation from Tables and Code in Jupyter Notebooks with Guidelines" has been accepted at ACL 2025 Findings.'
+- date: "05/2025"
+  text: '"Understanding and Tackling Over-Dilution in Graph Neural Networks" is accepted by KDD 2025. In this paper we investigate a new issue of GNNs beyond oversmoothing and oversquashing, called over-dilution, which focuses more on the information fusion of node attributes.'
+- date: "04/2025"
+  text: '"Wasserstein Graph Neural Networks for Graphs with Missing Attributes" is accepted by TPAMI!'
+- date: "04/2025"
+  text: "I gave an invited talk on latent graph discovery at the 3rd LoG-NYC workshop."
+- date: "01/2025"
+  text: "Another paper about interpretable time series analysis (based on shapelets) is accepted by ICLR 2025."
+- date: "01/2025"
+  text: '"[Influencer: Empowering Everyday Users in Creating Promotional Posts via AI-infused Exploration and Customization](https://arxiv.org/abs/2407.14928)", a multidimensional interactive AI tool for promotional post design, is conditionally accepted by CHI 2025.'
+- date: "01/2025"
+  text: '"Enhancing Graph Representation Learning with Localized Topological Features", with new theoretical analysis of persistence-enhanced GNNs and new empirical results of a learnable PH method, got accepted by JMLR!'
+- date: "01/2025"
+  text: "Our paper about wound healing stage classification using ultrasound images is published."
+- date: "01/2025"
+  text: "I visited BNL and gave a talk about graph and time series foundation models."
+- date: "12/2024"
+  text: "One paper about [LLM-generated code detection](https://arxiv.org/pdf/2405.16133) is accepted by AAAI 2025 (finally, one year and a half after its first submission to EMNLP 2023, and several months after Yangkai's graduation...). The rewriting idea is neat but maybe not new any more, but still it is an interesting and comprehensive study in the area of AI4code."
+- date: "09/2024"
+  text: 'I am invited to visit Weill Cornell Medicine and give a talk called "Towards Interpretable and Generalizable Time Series Deep Learning Models" on Oct 1st. The talk will include the study about time series analysis we did for the last several years, e.g. the neural-symbolic models and the recent NeurIPS 2024 paper about the shape-as-token time series foundation model.'
+- date: "09/2024"
+  text: "One paper about interpretable time series foundation model is accepted by NeurIPS 2024."
+- date: "09/2024"
+  text: "One paper about LLM evaluation is accepted by EMNLP 2024."
+- date: "06/2024"
+  text: 'Our paper "TrojVLM: Backdoor attack against vision language model" is accepted by ECCV 2024.'
+- date: "05/2024"
+  text: "Our paper about graph transformers is accepted by ICML 2024. In the paper we introduced the first theoretical investigation of a shallow graph transformer by characterizing its sample complexity and disclosed how self-attention and position encoding enhance the generalization of graph transformers."
+- date: "03/2024"
+  text: "One paper is accepted by NAACL 2024 Findings. In the paper we proposed a new mechanism for retrieval augmented code summarization."
+- date: "12/2023"
+  text: "One paper about cross-lingual adaptation for code clone detection is accepted by AAAI 2024."
+- date: "11/2023"
+  text: '"Cycle Invariant Positional Encoding for Graph Representation Learning" is accepted by LoG 2023 as an oral paper.'
+- date: "10/2023"
+  text: "Two papers are accepted by the EMNLP 2023 main conference. In one paper we demonstrated that compressing the external knowledge graph can lead to more diverse commonsense generation; in another paper we proposed to use control flow graph and pseudo code to guide the binary code summarization."
+- date: "09/2023"
+  text: '"SyncTREE: Fast Timing Analysis for Integrated Circuit Design through a Physics-informed Tree-based Graph Neural Network" is accepted to NeurIPS 2023.'
+- date: "08/2023"
+  text: "I joined Stony Brook University as an assistant professor!"
+- date: "07/2023"
+  text: 'Our paper from the DARPA BETR project, "A miniaturized, battery-free, wireless wound monitor that predicts wound closure rate early", got accepted to Advanced Healthcare Materials (IF 10.0).'
+- date: "05/2023"
+  text: '"IGB: Addressing The Gaps In Labeling, Features, Heterogeneity, and Size of Public Graph Datasets for Deep Learning Research" has been accepted to the KDD 2023 ADS track. Collaborating with UIUC, we created a new large-scale graph benchmark, named the Illinois Graph Benchmark (IGB), with over 162X more labeled data than previous public large graph datasets. It will facilitate practitioners to conduct systemic evaluation of GNN performance. The datasets are available at <https://github.com/IllinoisGraphBenchmark/IGB-Datasets>.'
+- date: "05/2023"
+  text: '"Federated Learning of Models Pre-Trained on Different Features with Consensus Graphs" is accepted to UAI 2023.'
+- date: "01/2023"
+  text: 'A new neural symbolic paper for event stream modeling, "Weighted Clock Logic Point Process", is accepted to ICLR 2023.'
+- date: "01/2023"
+  text: "Our paper Slide4N, which uses AI tools to assist automatic generation of presentation slides from computational notebooks, is conditionally accepted to CHI 2023."
+- date: "12/2022"
+  text: 'Our paper "An Analysis of Virtual Nodes in Graph Neural Networks for Link Prediction (Extended Abstract)" has been accepted to The First Learning on Graphs Conference (LoG 2022) for a spotlight presentation.'
+- date: "11/2022"
+  text: 'I am invited to give a talk on "Machine Learning Techniques to Follow DFU Progress" in the Diabetic Lower Extremity Symposium. In this talk I will introduce our effort using machine learning to accelerate wound healing, e.g. how neural symbolic models help with interpretable time series classification and factor selection.'
+- date: "09/2022"
+  text: 'Our paper "Neural Approximation of Extended Persistent Homology on Graphs" is accepted to NeurIPS 2022.'
+- date: "09/2022"
+  text: "One paper about neural logic models for time series classification is accepted to ICDM 2022."
+- date: "08/2022"
+  text: 'I am invited to give a talk on "Graph learning with geometric and topological structures" at the AI Seminar of USC.'
+- date: "05/2022"
+  text: "One paper about knowledge graph rule learning (using cycles) is accepted to ICML 2022!"
+- date: "04/2022"
+  text: "One paper is accepted to the NAACL 2022 main conference."
+- date: "01/2022"
+  text: 'Our paper "GNNLens: A Visual Analytics Approach for Prediction Error Diagnosis of Graph Neural Networks" is accepted to TVCG. It is the first tool to visualize the GNN results and it can help people identify possible data and model error patterns. This tool has been integrated into DGL: <https://github.com/dmlc/GNNLens2>.'
+- date: "11/2021"
+  text: 'One paper titled "MalGraph: Hierarchical Graph Neural Networks for Robust Windows Malware Detection" has been accepted to IEEE INFOCOM 2022!'
+- date: "10/2021"
+  text: 'Our paper "Improving Inductive Link Prediction Using Hyper-relational Facts" won the **best paper award** in ISWC 2021!'
+- date: "01/2021"
+  text: "My new book about graph neural networks (in Chinese) is online now: [JD](https://item.jd.com/13104020.html) · [Dangdang](http://product.dangdang.com/29199023.html)."

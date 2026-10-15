@@ -1,0 +1,21 @@
+{% comment %}
+  Renders one publication. Usage: {% include pub-entry.html pub=p %}
+{% endcomment %}
+{% assign p = include.pub %}
+{% assign me = "Tengfei Ma" %}
+<li class="pub" data-topics="{{ p.topics | join: ' ' }}" data-type="{{ p.type }}" data-year="{{ p.year }}">
+  <div class="pub__badges">
+    <span class="pub__venue pub__venue--{{ p.type }}">{{ p.venue_short }}</span>
+    {% if p.note %}{% assign n = p.note | downcase %}{% if n contains "award" or n contains "oral" or n contains "spotlight" %}<span class="pub__award">{{ p.note | split: ";" | first }}</span>{% endif %}{% endif %}
+  </div>
+  <div class="pub__body">
+    <span class="pub__title">{{ p.title }}</span><br>
+    <span class="pub__authors">{{ p.authors | replace: me, "<strong>Tengfei Ma</strong>" | replace: "马腾飞", "<strong>马腾飞</strong>" }}</span><br>
+    <span class="pub__where"><em>{{ p.venue }}</em>, {{ p.year }}.</span>
+    {% if p.note %}{% assign n = p.note | downcase %}{% unless n == "oral" or n == "spotlight" or n contains "best paper award" %}<span class="pub__note">({{ p.note }})</span>{% endunless %}{% endif %}
+    <div class="pub__meta">
+      {% for l in p.links %}<a class="pub__link" href="{{ l.url }}" target="_blank" rel="noopener">{{ l.name }}</a>{% endfor %}
+      {% for t in p.topics %}{% assign tp = site.data.pub_topics | where: "id", t | first %}<button type="button" class="pub__topic" data-topic="{{ t }}" title="Show all {{ tp.name }} papers">{{ tp.name }}</button>{% endfor %}
+    </div>
+  </div>
+</li>
